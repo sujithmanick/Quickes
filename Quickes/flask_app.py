@@ -5,28 +5,10 @@ import smtplib
 from email.mime.text import MIMEText
 from flask_sqlalchemy import SQLAlchemy
 import shelve
-import os
-import time
-os.environ["TZ"] = "Asia/Calcutta"
-time.tzset()
-format = "%Y-%m-%d %H:%M:%S"
-import calendar
-from pytz import timezone
-from tzlocal import get_localzone
 Fetch_url='https://newsapi.org/v2/everything?'
 api_key='Your api key'
 
-'''
-now_utc = datetime.now(timezone('UTC'))
-    now_local = now_utc.astimezone(get_localzone())
-    li=now_local.strftime(format)
-    li=li.split(' ')
-    cal=li[0].split('-')
-    time=li[1]
-    mon=calendar.month_name[int(cal[1])]
-    year=cal[0]
-    date=cal[2]
-    '''
+
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
