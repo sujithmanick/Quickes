@@ -58,8 +58,8 @@ def send_email(reciveremail,name):
     try:
         smtp_ssl_host = 'smtp.gmail.com'  # smtp.mail.yahoo.com
         smtp_ssl_port = 465
-        username = 'contactquickes@gmail.com'
-        password = 'Suji@2407'
+        username = 'contactquickes@gmail.com' #mail id
+        password = 'yourpassword' #yourpassword
         sender = 'contactquickes@gmail.com'
         targets = reciveremail
         msg = MIMEText('Hello  {} !,Welcome to Quickes ! Stay updated anywhere.Here after you will receive our site updates of our site.        Stay safe and stay updated.   \n \n\n                          Thank You  \n\n \n                                                 - visit again : {}'.format(name,'http://quickes.pythonanywhere.com/'))
