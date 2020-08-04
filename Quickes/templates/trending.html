@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/static/Images/logo.png" type="image/icon type">
+  <meta name="theme-color" content="#5f5eaa">
+  <meta name="mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="/static/css/main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://use.fontawesome.com/29c8e04d13.js'></script>
+<style>
+  nav div a p{
+    color: white !important;
+  }
+
+  .col-cent{
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+}
+.row{
+            color:hsl(210, 11%, 15%);
+display:flex;
+flex-wrap:wrap;
+gap:normal;
+line-height:24px;
+margin:0px -15px;
+text-align:left;
+        }
+
+        .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ebebe0;
+    background-clip: border-box;
+    border: 10px solid white;
+    border-radius: .25rem;
+}
+@media only screen and (max-width: 320px) {
+    card-body p{
+      font-size: 10px !important;
+    }
+  }
+  
+</style>
+</head>
+<body>
+	
+
+<nav style="position: fixed;height: auto;width: 100%;z-index: 1;" class="navbar navbar-dark bg-primary">
+  <!-- Navbar content -->
+  <a class="navbar-brand" style="display: flex;" href="#"><img style="border-radius: 40px;" src="/static/Images/logo.png" height="40px" width="40px"><p style="margin-left:10px;margin-top: 5px;color:white;font-family: Lucida Console, Courier, monospace;">Quickes</p></a>
+  
+  <button style="display:flex;margin-top: -10px;height: 40px;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <p style="margin-top:5px;">Trending</p><span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+
+      <li>
+        
+          <a align=center href="/" class="nav-item a"><p>Home</p></a></li>
+          <li>
+            <li>
+        
+              <a align=center  class="nav-item a"><p>Trending</p></a></li>
+              <li>
+          <a align=center class="nav-item " href="/Entertainment"><p>Entertaimnent</p></a>
+          </li>
+          <li>
+          <a align=center class="nav-item " href="/Education"><p>Education</p></a></li>
+        <li>
+          <a align=center class="nav-item " href="/Sports"><p>Sports</p></a>
+        
+      </li>
+      <li>
+        <a align=center class="nav-item " href="/Search"><p>Search</p></a>
+    </li>
+    </ul>
+    
+  </div>
+</nav>
+
+<!--Results-->
+
+{% for row in ls %}
+<div class="row" style="height:auto;width:90%;padding-top: 80px; top: 20px;margin-left: auto;margin-right: auto;">
+        
+        
+
+        <!-- Card Narrower -->
+          <a href={{row[0]}}>
+        
+        <div  class="col3  card card-cascade narrower" style="display:block;margin-left:auto;margin-right: auto;width:300px;padding: 10px;">
+
+        <!-- Card image -->
+        <div class="view view-cascade overlay">
+        <img  style="width:80%; height:100%; border-radius: 5px;display:block;margin-left:auto;margin-right:auto;margin-top:10px;-webkit-box-shadow: 21px 25px 15px -13px rgba(69,69,69,0.59);-moz-box-shadow: 18px 20px 15px -13px rgba(69,69,69,0.59); box-shadow:17px 20px 15px -13px rgba(69,69,69,0.59);" class="card-img-top" src={{row[1]}} alt="Card image cap">
+        <a>
+            <div class="mask rgba-white-slight"></div>
+        </a>
+        </div>
+
+        <a href={{row[0]}}>
+            
+        <div  class="col3" style="width:280px;">
+        <!-- Card content -->
+        <div class="card-body card-body-cascade" style="height:auto;width: auto;">
+
+        <!-- Label -->
+        <p class="pink-text"><i class="fas fa-utensils"></i><b style="font-size: medium;">{{row[2]}}</b></p>
+        
+        
+        <!-- Button -->
+        
+
+        </div>
+
+        <!-- Card footer -->
+
+
+        </div></a></div></a>
+        
+        <!-- Card Narrower -->
+
+        <!-- Card Narrower -->
+                <a href={{row[3]}}>
+        
+                    <div  class="col3  card card-cascade narrower" style="display:block;margin-left:auto;margin-right: auto;width:300px;padding: 10px;">
+            
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                    <img  style="width:80%; height:100%; border-radius: 5px;display:block;margin-left:auto;margin-right:auto;margin-top:10px;-webkit-box-shadow: 21px 25px 15px -13px rgba(69,69,69,0.59);-moz-box-shadow: 18px 20px 15px -13px rgba(69,69,69,0.59); box-shadow:17px 20px 15px -13px rgba(69,69,69,0.59);" class="card-img-top" src={{row[4]}} alt="Card image cap">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                    </div>
+            
+                    <a href={{row[3]}}>
+                        
+                    <div  class="col3" style="width:280px;">
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade" style="height:auto;width: auto;">
+            
+                    <!-- Label -->
+                    <p class="pink-text"><i class="fas fa-utensils"></i><b style="font-size: medium;">{{row[5]}}</b></p>
+                    
+                    
+                    <!-- Button -->
+                    
+            
+                    </div>
+            
+                    <!-- Card footer -->
+            
+            
+        </div></a></div></a>
+                    
+        <!-- Card Narrower -->
+
+                <!-- Card Narrower -->
+                <a href={{row[6]}}>
+        
+                    <div  class="col3  card card-cascade narrower" style="display:block;margin-left:auto;margin-right: auto;width:300px;padding: 10px;">
+            
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                    <img  style="width:80%; height:100%; border-radius: 5px;display:block;margin-left:auto;margin-right:auto;margin-top:10px;-webkit-box-shadow: 21px 25px 15px -13px rgba(69,69,69,0.59);-moz-box-shadow: 18px 20px 15px -13px rgba(69,69,69,0.59); box-shadow:17px 20px 15px -13px rgba(69,69,69,0.59);" class="card-img-top" src={{row[7]}} alt="Card image cap">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                    </div>
+            
+                    <a href={{row[6]}}>
+                        
+                    <div  class="col3" style="width:280px;">
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade" style="height:auto;width: auto;">
+            
+                    <!-- Label -->
+                    <p class="pink-text"><i class="fas fa-utensils"></i><b style="font-size: medium;">{{row[8]}}</b></p>
+                    
+                    
+                    <!-- Button -->
+                    
+            
+                    </div>
+            
+                    <!-- Card footer -->
+            
+            
+        </div></a></div></a>
+                    
+        <!-- Card Narrower -->
+            
+
+</div>
+
+     {% endfor %}
+    
+     <footer style="background-color:lightgrey;">
+      <div class="parallax7 " style="margin-right: 0px !important;">
+          <div class="row" style="width: 90%;display: block;margin-left: auto;margin-right: auto;">
+          <div class="colsm-4" style="display: block;margin-left: auto;margin-right: auto;">
+              <p align=center>Thank you for visiting us and don't forgot to check our other projects</p>
+          </div>
+      </div>
+      <div class="row" style="display: flex;margin-left: auto;margin-right: auto;">
+          <div class="colsm-4" style="display: block;margin-left: auto;margin-right: auto;">
+              <a href="mailto:sailatindia@gmail.com"><i style="display: block;margin-left: auto;margin-right: auto; font-size:24px" class="fa fa-envelope" ></i><p>Report</p></a>
+          </div>
+          <div class="colsm-4" style="display: block;margin-left: auto;margin-right: auto;">
+              <a href="https://sailindia.pythonanywhere.com/" target="_blank"><i class="fa fa-location-arrow" style="display: block;margin-left: auto;margin-right: auto; font-size:24px"></i><p>Sail India</p></a>
+          </div>
+      </div>
+          <div style="display: block;margin-left: auto;margin-right: auto;" class="row">
+              <p align=center>&copy2020 </p>
+          </div>
+          
+      </div>
+  </footer>
+    
+</body>
+</html>
