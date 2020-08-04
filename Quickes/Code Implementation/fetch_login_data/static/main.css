@@ -1,0 +1,12 @@
+body{
+    background-color: white;
+}
+
+body nav div {
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    
+    background-color: lightgreen;
+    box-shadow: lightgrey 2px 2px 2px 2px;
+}

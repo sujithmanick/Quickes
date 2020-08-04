@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#button1").click(function(){
+    $("#div1").fadeIn();
+    
+  });
+});
+
+$(document).ready(function(){
+  $("#button2").click(function(){
+    $("#div1").fadeOut();
+    
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Demonstrate fadeToggle() with different speed parameters.</p>
+
+<button id="button1">Click to fade in/out boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:red;">
+<button  id="button2">x</button>
+</div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/Code Implementation/front end/Qlogo.png" type="image/icon type">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="theme-color" content="#5f5eaa">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://use.fontawesome.com/29c8e04d13.js'></script>
+    <title>Quickes</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body onload="myFunction()">
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+        </script>
+
+
+    <div Id=loader class="cycles">
+        <div>
+            <img style="display: block;margin-left: auto;margin-right: auto;" src="/Code Implementation/front end/Qlogo.png" alt="logo">
+        </div>
+        <div id="cycle1" class="cycle"></div>
+        <div id="cycle2" class="cycle"></div>
+        <div id="cycle3" class="cycle"></div>
+        <div id="cycle4" class="cycle"></div>
+        <div id="cycle5" class="cycle"></div>
+        <div class="logo">loading...</div>
+      </div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+
+            <div class="parallaxnav"><nav style="position: fixed;height: auto;width: 100%;z-index: 2;background-color: white;color: black;"; class="navbar navbar-dark  ">
+                <!-- Navbar content -->
+                <a class="navbar-brand" style="display: flex;" href="#"><img style="border-radius: 40px;" src="/Code Implementation/front end/Qlogo.png" height="40px" width="40px"><p style="margin-left:10px;margin-top: 5px;color:black;font-family: Lucida Console, Courier, monospace;">Quickes</p></a>
+                
+                <a href="{{log_link}}"><button type="button" class="btn btn-danger">{{log}}</button></a>
+
+            </nav></div>
+                <div class="parallax">Welcome to Quickes
+                    <br><br>
+                    <div class="row" style="display: block;margin-left: auto;margin-right: auto;padding-top: 15%;">
+                        <div style="display: flex !important;margin-left: 8%;">
+                            <div class="col" style="display: block;margin-left: auto;margin-right: auto;margin-top:50px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: whitesmoke ;"><h4><a style="font-size: 45px;">W</a>elcome to <a style="font-size: 45px;">Q</a>uickes<hr><a style="font-size: 45px;">Q</a>uick and aspiring News are here <a style="font-size: 45px;">!</a></h4></div>
+                            <div class="col" style="display: block;margin-left: auto;margin-right: auto;"><img style="display: block;margin-left: auto;margin-right: auto;width: 200px;filter: drop-shadow(0px 5px 2px #24242c9c);" class="img-fluid hmeimg" src="/Code Implementation/front end/Homeimg.png" alt="Image Not loaded"></div>
+                            
+                            
+                        </div>
+                    </div>
+
+                    <div class="row" style="display: block;margin-top: -2%;margin-left: auto;margin-right: auto;">
+                        <div >
+                            <div  class="col"><button  style="display: block;margin-left: auto;margin-right: auto;" class="btn btn-success"><a style="color: whitesmoke;text-decoration: none;" href="#start">Start</a></button></div>   
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                
+                <div class="parallax2">
+                    <a id="start"></a>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div   style="width: 90%;margin-left: auto;margin-right: auto;">
+                                <div  style="display: block;margin-left: auto;margin-right: auto;margin-top: 10%;width: 90%;">
+                                    <h3 style="color: whitesmoke;font-weight: bold;">"T" for Trending</h3>
+                            <div class="row" style="background-color: rgba(255, 255, 255, 0.329);border-radius: 20px;" >
+                                
+                                    <img style="padding: 20px;"  class="img-fluid col-sm-4" width="50%" height="50%" src="/Code Implementation/front end/trendingico.png" class="feature-img">
+                                
+                            <div class="col-md-6" style="padding: 10px;">
+                                <div style="display: block;margin-left: auto;margin-right: auto;margin-top: 05%;">
+                                    <h4>Trending #1 is here !</h4>
+                                    <div >
+                                    <a  href="/trending"><button  class="btn btn-info float-right">Go</button></a>
+                                </div>
+                                </div>
+                            </div>
+                        </div></div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    
+                
+                
+                <div class="parallax3">
+                
+                    <br>
+                    <br>
+
+                    <div   style="width: 90%;margin-left: auto;margin-right: auto;">
+                        <div  style="display: block;margin-left: auto;margin-right: auto;margin-top: 10%;width: 90%;">
+                            <h3 style="color: whitesmoke;font-weight: bold;">"E" for Entertainment</h3>
+                    <div class="row" style="background-color: rgba(255, 255, 255, 0.671);border-radius: 20px;" >
+                            <img style="padding: 20px;" class="img-fluid col-sm-4" width="50%" height="50%" src="/Code Implementation/front end/entertainment.png" class="feature-img">
+                        
+                            <div class="col-md-6" style="padding: 10px;">
+                                <div style="display: block;margin-left: auto;margin-right: auto;margin-top: 05%;">
+                                    <h4>Want Entertainment News !</h4>
+                                    <div >
+                                    <a  href="/trending"><button  class="btn btn-info float-right">Go</button></a>
+                                </div>
+                                </div>
+                            </div>
+                </div></div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="parallax5">
+                    
+                    <br>
+                    <br>
+
+                    <div   style="width: 90%;margin-left: auto;margin-right: auto;">
+                        <div  style="display: block;margin-left: auto;margin-right: auto;margin-top: 10%;width: 90%;">
+                            <h3 style="color: whitesmoke;font-weight: bold;">"S" for Sports</h3>
+                    <div class="row" style="background-color: rgba(68, 68, 68, 0.521);border-radius: 20px;" >
+                            <img style="padding: 20px;" class="img-fluid col-sm-4" width="50%" height="50%" src="/Code Implementation/front end/sport.png" class="feature-img">
+                        
+                            <div class="col-md-6" style="padding: 10px;">
+                                <div style="display: block;margin-left: auto;margin-right: auto;margin-top: 05%;">
+                                    <h4 style="color: whitesmoke;">You are a Sports lover ?</h4>
+                                    <div >
+                                    <a  href="/trending"><button  class="btn btn-info float-right">Go</button></a>
+                                </div>
+                                </div>
+                            </div>
+                </div></div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                
+                <div class="parallax4">
+                    <br>
+                    <br>
+
+                    <div   style="width: 90%;margin-left: auto;margin-right: auto;">
+                        <div  style="display: block;margin-left: auto;margin-right: auto;margin-top: 10%;width: 90%;">
+                            <h3 style="color: whitesmoke;font-weight: bold;">"E" for Education</h3>
+                    <div class="row" style="background-color: rgba(106, 49, 182, 0.493);border-radius: 20px;" >
+                            <img  style="padding: 20px;" class="img-fluid col-sm-4" width="50%" height="50%" src="/Code Implementation/front end/education.png" class="feature-img">
+                        
+                            <div class="col-md-6" style="padding: 10px;">
+                                <div style="display: block;margin-left: auto;margin-right: auto;margin-top: 0%;">
+                                    <h4 style="color: whitesmoke;margin-top: 1%;">Educational  News ?</h4>
+                                    <div >
+                                    <a  href="/trending"><button  class="btn btn-info float-right">Go</button></a>
+                                </div>
+                                </div>
+                            </div>
+                </div></div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                
+
+                
+                <div class="parallax6">
+                    
+                    <br>
+                    <br>
+
+                    <div   style="width: 90%;margin-left: auto;margin-right: auto;">
+                        <div  style="display: block;margin-left: auto;margin-right: auto;margin-top: 10%;width: 90%;">
+                            <h3 style="color: whitesmoke;font-weight: bold;">Search Your wish </h3>
+                    <div class="row" style="background-color: rgba(229, 228, 236, 0.671);border-radius: 20px;" >
+                            <img style="border-radius: 50%;padding: 20px;" class="img-fluid col-sm-4" width="40%" height="40%" src="searchico.jpg" class="feature-img">
+                        
+                            <div class="col-md-6" style="padding: 10px;">
+                                <div style="display: block;margin-left: auto;margin-right: auto;margin-top: 05%;">
+                                    <h4>Find Your Relevant</h4>
+                                    <div >
+                                    <a  href="/trending"><button  class="btn btn-info float-right">Go</button></a>
+                                </div>
+                                </div>
+                            </div>
+                </div></div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+                <footer>
+    <div class="parallax7 " style="margin-right: 0px !important;">
+        <div class="row" style="width: 90%;display: block;margin-left: auto;margin-right: auto;">
+        <div class="colsm-4" style="display: block;margin-left: auto;margin-right: auto;">
+            <p align=center>Thank you for visiting us and don't forgot to check our other projects</p>
+        </div>
+    </div>
+    <div class="row" style="display: flex;margin-left: auto;margin-right: auto;">
+        <div class="colsm-4" style="display: block;margin-left: auto;margin-right: auto;">
+            <a href="mailto:sailatindia@gmail.com"><i style="display: block;margin-left: auto;margin-right: auto; font-size:24px" class="fa fa-envelope" ></i><p>Report</p></a>
+        </div>
+        <div class="colsm-4" style="display: block;margin-left: auto;margin-right: auto;">
+            <a href="https://sailindia.pythonanywhere.com/" target="_blank"><i class="fa fa-location-arrow" style="display: block;margin-left: auto;margin-right: auto; font-size:24px"></i><p>Sail India</p></a>
+        </div>
+    </div>
+        <div style="display: block;margin-left: auto;margin-right: auto;" class="row">
+            <p align=center>&copy2020 </p>
+        </div>
+        
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
